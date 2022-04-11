@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Playfair+Display&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*css for header*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 3;
+}
+
+.navbar .logo img{
+    margin-left: 80px;
+    width: 90px;
+}
+
+.navbar ul{
+    display: flex;
+    margin-right: 80px;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.navbar ul li a{
+    color: aliceblue;
+    font-family: "Ubuntu";
+    font-size: 14px;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 2px solid orange;
+    padding-bottom: 3px;
+}
+
+/*css for home*/
+.home{
+    display: flex;
+    background: url("assets/img/home.jpg") no-repeat center;
+    height: 100vh;
+    width: 100%;
+}
+
+.home .home-content{
+    margin: auto 0 auto 570px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.home .home-content .text1{
+    font-family: "Beau Rivage";
+    color: orange;
+    font-weight: bold;
+}
+
+.home .home-content .text2{
+    font-family: "Playfair Display";
+    color: aliceblue;
+    font-size: 60px;
+    border-bottom: 1px solid orange;
+}
+
+.home .home-content .text3{
+    font-family: "Ubuntu";
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 6px;
+    border-top: 1px solid orange;
+    margin-top: 10px;
+}
+
+/*Concept CSS*/
+.concept{
+    background: url("assets/img/fondo_hojas.jpg") no-repeat center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.strike {
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+    font-family: "Ubuntu";
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 99px;
+    height: 1px;
+    background: white;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.concept .wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    /*question: align-items not working???*/
+}
+
+.concept-content{
+    background-color: #343635;
+    color: aliceblue;
+    width: 40vw;
+}
+
+.concept-content p{
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-bottom: 60px;
+    font-family: "Poppins";
+}
+
+.concept .juice{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    transform: translateX(210%);
+}
+
+.concept .leaf{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    transform: translateX(-150%);
+}
+
+/*Images CSS*/
+
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("assets/img/fondo_images.jpg") no-repeat center;
+    
+}
+
+.images .row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.images .row2{
+    display: flex;
+    justify-content: center;
+}
+
+.images .row3{
+    display: flex;
+    justify-content: center;
+}
+
+.images img{
+    width: 25%;
+    margin: 10px
+}
+
+/*carta css*/
+.carta{
+    margin-bottom: 30px;
+}
+
+.carta .strike > span:before,
+.carta .strike > span:after {
+    content: "";
+    /*position: absolute;*/
+    top: 50%;
+    width: 299px;
+    height: 1px;
+    background: black;
+}
+
+.carta .menu-carta{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.carta .menu-carta ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.carta .menu-carta ul li{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.carta .menu-carta a{
+    font-family: "Ubuntu";
+    color: black;
+    font-weight: bolder;
+}
+
+.carta .menu-carta li:hover{
+    border-bottom: 1px solid orange;
+}
+
+.carta .carta-content{
+    height: 700px;
+    width: 70vw;
+    background: url("assets/img/fondo-carta.png") no-repeat center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    
+}
+
+.carta .carta-content ul, h3{
+    list-style: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.carta .carta-content ul li{
+    margin-bottom: 30px;
+}
+
+.carta .carta-content .col1{
+    width: 30vw;
+    height: 640px;
+    background-color: white;
+    margin-top: 30px;
+    margin-right: 16px;
+}
+
+.carta .carta-content .col2{
+    width: 30vw;
+    height: 640px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.carta .boton-carta{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carta .boton-carta button{
+    padding: 15px;
+    background-color: #a37800;
+    color: white;
+    font-family: "Ubuntu";
+    border: 0;
+}
+
+
+/*form css*/
+
+.form{
+    width: 100vw;
+    height: 100vh;
+    background: url("assets/img/form-back.jpg") no-repeat center;
+}
+
+.form .strike > span:before,
+.form .strike > span:after {
+    content: "";
+    /*position: absolute;*/
+    top: 50%;
+    width: 199px;
+    height: 1px;
+    background: orange;
+}
+
+.form .container{
+    display: flex;
+    height: 80vh;
+    justify-content:center;
+    align-items: center;
+}
+
+.form .container .text-col{
+    font-family: "Ubuntu";
+    color: white;
+}
+
+.form .container .text-col h2{
+    color: orange;
+    font-size: 2.1rem;
+}
+
+.form .container .text-col h4{
+    border-bottom: 2px solid grey;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.form .container .form-col form{
+    color: white;
+    font-size: 2rem;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+.form form select, #reserva{
+    padding: 5px;
+}
+
+#type{
+    margin-bottom: 30px;
+}
+
+
+/*CSS BLOG*/
+.blog{
+    width: 100vw;
+    height: 100vh;
+}
+
+.blog img{
+    width: 20%;
+    height: 25rem;
+}
+
+.blog .container{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog .centered{
+    position: absolute;
+    transform: translateX(-250%);
+    color: white;
+    font-family: "Ubuntu";
+    font-size: 2rem;
+}
+
+.blog .centered2{
+    position: absolute;
+    color: white;
+    font-family: "Ubuntu";
+    font-size: 2rem;
+}
+
+.blog .centered3{
+    position: absolute;
+    color: white;
+    font-family: "Ubuntu";
+    transform: translateX(250%);
+    font-size: 2rem;
+}
+
+.blog .strike > span:before,
+.blog .strike > span:after {
+    content: "";
+    /*position: absolute;*/
+    top: 50%;
+    width: 199px;
+    height: 1px;
+    background: orange;
+}
+
+.blog .boton{
+    display: flex;
+    justify-content: center;
+}
+
+.blog .boton button{
+    padding: 10px;
+    border: 0;
+    background-color: #a37800;
+    color: white;
+}
+
+/*CSS CONTACTO*/
+.contacto{
+    width: 100vw;
+    height: 65vh;
+    background: url("assets/img/flor-contacto.jpg") no-repeat center;
+    color: white;
+}
+
+.contacto .logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 55vh;
+    align-items: center;
+}
+
+.contacto .logo h4{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+}
+
+.contacto .logo img{
+    width: 15%;
+    margin: 0 auto;
+}
+
+.contacto .formas-contacto{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contacto .formas-contacto i{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: orange;
+}
+
+/*FOLLOW CSS*/
+
+.follow{
+    width: 100vw;
+    height: 30vh;
+    color: black;
+    background-color: #c7c6c5;
+}
+
+.follow .buttons{
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.follow button{
+    padding: 10px 40px 10px 40px;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+.follow .copy{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.follow i{
+    margin-right: 20px;
+}
+
+.follow .strike > span:before,
+.follow .strike > span:after {
+    content: "";
+    /*position: absolute;*/
+    top: 50%;
+    width: 199px;
+    height: 1px;
+    background: orange;
+}
